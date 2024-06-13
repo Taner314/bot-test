@@ -9,7 +9,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir resources
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip3 install -r requirements.txt \
+    pip3 install -r requirements.txt
 
 COPY . /app
 
